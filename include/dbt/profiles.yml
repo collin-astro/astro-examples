@@ -1,0 +1,25 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: gp21411.us-east-1
+
+      # User/password auth
+      user: FIELDENGINEER
+      
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: FIELDENGINEER
+      database: DEMO
+      warehouse: ROBOTS
+      schema: PUBLIC
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: collin-demo
+
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: False # default: false 
+      retry_all: False  # default: false
+
