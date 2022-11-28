@@ -1,6 +1,6 @@
 dbt_basic
 ========
-Description: Runs dbt commands (seed, run, test) via bash commands
+Description: Runs dbt commands (seed, run, test) via bash commands for the jaffle_shop example project
 
 Requirements:
 - The dbt project included in this repo under include/dbt
